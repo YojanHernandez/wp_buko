@@ -17,7 +17,7 @@
     "plugin-zip": "wp-scripts plugin-zip",
     "test:e2e": "wp-scripts test-e2e",
     "test:unit": "wp-scripts test-unit-js",
-    "create-block": "npx @wordpress/create-block@latest --no-plugin --namespace=wp-gutenberg-blocks --textdomain=wp-gutenberg-blocks --wp-scripts"
+    "create-block": "npx @wordpress/create-block@latest --no-plugin --namespace=wp-buko --textdomain=wp-buko --wp-scripts"
   },
   "keywords": [],
   "author": "Yojan Hernandez",
