@@ -1,4 +1,4 @@
-import Toggle from './components/Toggle';
+import Toggle from '../../components/Toggle';
 import { useBlockProps } from '@wordpress/block-editor';
 import './style.scss';
 
