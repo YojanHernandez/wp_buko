@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wp-buko/logo",
+	"version": "0.1.0",
+	"title": "Custom Logo",
+	"category": "text",
+	"icon": "smiley",
+	"description": "A custom logo.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "WP Buko"
+		}
+	},
+	"textdomain": "wp-buko",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
