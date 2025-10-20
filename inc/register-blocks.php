@@ -8,7 +8,7 @@
 function wp_buko_register_blocks()
 {
 
-    $build_dir = WP_BUKO_DIR . 'build/blocks/';
+    $build_dir = WP_BUKO_DIR . '/build/blocks/';
     if (file_exists($build_dir)) {
         $blocks = scandir($build_dir);
         foreach ($blocks as $block) {
