@@ -95,8 +95,14 @@
             ],
             "fontFamilies": [
                 {
-                    "name": "Manrope",
-                    "slug": "manrope"
+                    "name": "Primary",
+                    "slug": "primary",
+                    "fontFamily": "'Montserrat', sans-serif"
+                },
+                {
+                    "name": "Secondary",
+                    "slug": "secondary",
+                    "fontFamily": "'Driftline', sans-serif"
                 }
             ]
         },
@@ -149,7 +155,7 @@
             ]
         },
         "layout": {
-            "contentSize": "1200px",
+            "contentSize": "1000px",
             "wideSize": "1920px"
         }
     },
@@ -166,51 +172,13 @@
             }
         },
         "typography": {
-            "fontFamily": "var:preset|font-family|manrope",
-            "fontSize": "var:preset|font-size|large",
+            "fontFamily": "var:preset|font-family|primary",
+            "fontSize": "var:preset|font-size|medium",
             "fontWeight": "300",
             "letterSpacing": "-0.1px",
             "lineHeight": "1.4"
         },
         "elements": {
-            "button": {
-                "color": {
-                    "background": "var:preset|color|contrast",
-                    "text": "var:preset|color|base"
-                },
-                ":focus": {
-                    "outline": {
-                        "color": "var:preset|color|accent-4",
-                        "offset": "2px"
-                    }
-                },
-                ":hover": {
-                    "color": {
-                        "background": "color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent)",
-                        "text": "var:preset|color|base"
-                    },
-                    "border": {
-                        "color": "transparent"
-                    }
-                },
-                "spacing": {
-                    "padding": {
-                        "bottom": "1rem",
-                        "left": "2.25rem",
-                        "right": "2.25rem",
-                        "top": "1rem"
-                    }
-                },
-                "typography": {
-                    "fontSize": "var:preset|font-size|medium"
-                }
-            },
-            "caption": {
-                "typography": {
-                    "fontSize": "var:preset|font-size|small",
-                    "lineHeight": "1.4"
-                }
-            },
             "h1": {
                 "typography": {
                     "fontSize": "var:preset|font-size|xx-large"
