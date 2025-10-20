@@ -1,12 +1,17 @@
-<!-- wp:group {"className":"wp-site-header","layout":{"type":"constrained"}} -->
-<div class="wp-block-group wp-site-header">
-    <!-- wp:group {"className":"wp-header-content","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
-    <div class="wp-block-group wp-header-content">
-        <!-- wp:site-logo {"width":200} /-->
-        <!-- wp:site-title {"level":1} /-->
-        <!-- wp:site-tagline /-->
-        <!-- wp:navigation {"ref":1,"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} /-->
-    </div>
-    <!-- /wp:group -->
+<!-- wp:group {"className":"wp-site-header","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<div
+  class="wp-block-group wp-site-header"
+  style="
+    padding-top: var(--wp--preset--spacing--20);
+    padding-bottom: var(--wp--preset--spacing--20);
+  "
+>
+  <!-- wp:group {"className":"wp-header-content","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+  <div class="wp-block-group wp-header-content">
+    <!-- wp:wp-buko/logo /-->
+
+    <!-- wp:wp-buko/dark-mode-toggle /-->
+  </div>
+  <!-- /wp:group -->
 </div>
 <!-- /wp:group -->

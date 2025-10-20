@@ -1,14 +1,9 @@
 <!-- wp:template-part {"slug":"header","theme":"wp_buko"} /-->
 
-<!-- wp:group {"tagName":"main","className":"wp-site-main"} -->
-<main class="wp-block-group wp-site-main">
-  <!-- wp:group {"className":"wp-post-content"} -->
-  <div class="wp-block-group wp-post-content">
-    <!-- wp:post-title /-->
-    <!-- wp:post-content /-->
-  </div>
-  <!-- /wp:group -->
-</main>
+<!-- wp:group {"className":"wp-site-main","style":{"elements":{"link":{"color":{"text":"var:preset|color|text"}}}},"textColor":"text"} -->
+<div class="wp-block-group wp-site-main has-text-color has-link-color">
+  <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+</div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"wp_buko"} /-->
