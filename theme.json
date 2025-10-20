@@ -262,7 +262,6 @@
                     }
                 }
             }
-        },
-        "css": ":root { color-scheme: light dark; }"
+        }
     }
 }
