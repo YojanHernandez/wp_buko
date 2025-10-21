@@ -1,6 +1,23 @@
 <?php
 
 /**
+ * Enqueue admin styles and scripts for WP Buko
+ */
+function wp_buko_enqueue_admin_assets($hook) {
+    if ($hook !== 'toplevel_page_wp-buko-settings') {
+        return;
+    }
+
+    wp_enqueue_style(
+        'wp-buko-admin',
+        WP_BUKO_URL . '/assets/css/admin.css',
+        [],
+        filemtime(WP_BUKO_DIR . '/assets/css/admin.css')
+    );
+}
+add_action('admin_enqueue_scripts', 'wp_buko_enqueue_admin_assets');
+
+/**
  * Enqueue theme styles and scripts.
  *
  * Enqueues the theme's main CSS file and JavaScript file.
