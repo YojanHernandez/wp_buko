@@ -26,11 +26,11 @@
 		},
 		"namePlaceholder": {
 			"type": "string",
-			"default": "Tu Nombre"
+			"default": "Nombre"
 		},
 		"emailPlaceholder": {
 			"type": "string",
-			"default": "Tu Correo"
+			"default": "Correo electrónico"
 		},
 		"buttonText": {
 			"type": "string",

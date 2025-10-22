@@ -1,7 +1,15 @@
 <!-- wp:template-part {"slug":"header","theme":"wp_buko"} /-->
 
-<!-- wp:group {"className":"wp-site-main","style":{"elements":{"link":{"color":{"text":"var:preset|color|text"}}}},"textColor":"text"} -->
-<div class="wp-block-group wp-site-main has-text-color has-link-color">
+<!-- wp:group {"className":"wp-site-main","style":{"elements":{"link":{"color":{"text":"var:preset|color|text"}}},"spacing":{"padding":{"top":"0","bottom":"0"}, "margin":{"top":"0"}},"dimensions":{"minHeight":"calc(80vh - var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dspacing\u002d\u002d20) * 2)"}},"textColor":"text","layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal","justifyContent":"center"}} -->
+<div
+  class="wp-block-group wp-site-main has-text-color has-link-color"
+  style="
+    min-height: calc(80vh - var(--wp--preset--spacing--20) * 2);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+  "
+>
   <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
 </div>
 <!-- /wp:group -->

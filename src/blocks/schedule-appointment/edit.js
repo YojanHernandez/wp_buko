@@ -68,11 +68,9 @@ export default function Edit({ attributes, setAttributes }) {
 				</PanelBody>
 			</InspectorControls>
 
-			<div className="wp-buko-schedule__card">
-				<h2 className="wp-buko-schedule__title"><RichText value={title} onChange={(value) => setAttributes({ title: value })} /></h2>
-				<div className="wp-buko-schedule__wrapper">
-					<Schedule data={JSON.stringify(attributes)} />
-				</div>
+			<h2 className="wp-buko-schedule__title"><RichText value={title} onChange={(value) => setAttributes({ title: value })} /></h2>
+			<div className="wp-buko-schedule__wrapper">
+				<Schedule data={JSON.stringify(attributes)} />
 			</div>
 		</div>
 	);

@@ -23,7 +23,7 @@ function wp_buko_register_api_routes()
 
     register_rest_route($endpoint, '/book', [
         'methods' => 'POST',
-        'callback' => '_wp_buko_create_booking',
+        'callback' => 'wp_buko_create_booking',
     ]);
 
     register_rest_route($endpoint, '/bookings', [
@@ -93,8 +93,20 @@ function wp_buko_create_booking($request)
     $date  = sanitize_text_field($data['date'] ?? ''); // YYYY-MM-DD
     $time  = sanitize_text_field($data['time'] ?? '');
 
-    if (empty($name) || ! is_email($email) || empty($date) || empty($time)) {
-        return new WP_Error('invalid_data', 'Incomplete or invalid data', ['status' => 400]);
+    if (empty($name)) {
+        return new WP_Error('invalid_data', 'El nombre es requerido.', ['status' => 400]);
+    }
+
+    if (!is_email($email)) {
+        return new WP_Error('invalid_data', 'El correo electrónico no es válido', ['status' => 400]);
+    }
+
+    if (empty($date)) {
+        return new WP_Error('invalid_data', 'La fecha es requerida.', ['status' => 400]);
+    }
+
+    if (empty($time)) {
+        return new WP_Error('invalid_data', 'El horario es requerido.', ['status' => 400]);
     }
 
     $table = $wpdb->prefix . 'buko_appointments';
