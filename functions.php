@@ -26,10 +26,10 @@ require_once WP_BUKO_DIR . '/inc/register-blocks.php';
 require_once WP_BUKO_DIR . '/inc/options.php';
 
 // Custom Tables.
-require_once WP_BUKO_DIR . '/database/schedule-appointment.php';
+require_once WP_BUKO_DIR . '/inc/schedule-appointment.php';
 
 // Custom rest API.
-require_once WP_BUKO_DIR . '/api/routes.php';
+require_once WP_BUKO_DIR . '/inc/routes.php';
 
 // Utils.
 require_once WP_BUKO_DIR . '/inc/utils.php';

@@ -25,3 +25,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Calendar styles */
+.rdp-root {
+    --rdp-accent-color: var(--wp--preset--color--primary);
+    --rdp-accent-background-color: var(--wp--preset--color--background);
+    --rdp-selected-border: 2px solid var(--wp--preset--color--primary);
+}

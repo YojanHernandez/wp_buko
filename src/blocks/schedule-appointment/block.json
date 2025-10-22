@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wp-buko/schedule-appointment",
+	"version": "0.1.0",
+	"title": "schedule Appointment",
+	"category": "text",
+	"icon": "smiley",
+	"description": "A schedule appointment.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Agenda tu cita"
+		},
+		"dateLabel": {
+			"type": "string",
+			"default": "Selecciona una fecha"
+		},
+		"timeLabel": {
+			"type": "string",
+			"default": "Horarios disponibles"
+		},
+		"namePlaceholder": {
+			"type": "string",
+			"default": "Tu Nombre"
+		},
+		"emailPlaceholder": {
+			"type": "string",
+			"default": "Tu Correo"
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Agendar Cita"
+		},
+		"successMessage": {
+			"type": "string",
+			"default": "Cita agendada con éxito!"
+		},
+		"errorMessage": {
+			"type": "string",
+			"default": "Error al agendar la cita"
+		},
+		"noSlotsMessage": {
+			"type": "string",
+			"default": "No hay citas disponibles"
+		}
+	},
+	"textdomain": "wp-buko",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

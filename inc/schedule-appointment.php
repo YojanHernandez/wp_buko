@@ -29,8 +29,6 @@ function wp_buko_create_schedule_table()
         created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY  (id)
     ) $charset_collate;";
-    add_action('after_switch_theme', 'wp_buko_create_schedule_table');
-
 
     require_once ABSPATH . 'wp-admin/includes/upgrade.php';
     dbDelta($sql);
